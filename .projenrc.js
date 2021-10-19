@@ -11,7 +11,7 @@ const project = new JsiiProject({
   // description:
   devDeps: [
     'fs-extra',
-    '@types/fs-extra',
+    '@types/fs-extra^8',
     'projen'
   ],
   packageName: '@desiby/projen-github-demo',
