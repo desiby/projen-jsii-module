@@ -11,8 +11,8 @@ const project = new JsiiProject({
   // description:
   devDeps: [
     'fs-extra',
-    '@types/fs-extra@^8',
-    'projen',
+    '@types/fs-extra@^10.0.0',
+    'projen@0.30.5'
   ],
   packageName: '@desiby/projen-github-demo',
   dependabot: false, // Disabling because it is a demo project
