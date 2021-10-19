@@ -6,10 +6,18 @@ const project = new JsiiProject({
   name: 'projen-jsii-module',
   repositoryUrl: 'https://github.com/desiby/projen-jsii-module.git',
 
-  // deps: [],                /* Runtime dependencies of this module. */
-  // description: undefined,  /* The description is just a string that helps people understand the purpose of the package. */
-  // devDeps: [],             /* Build dependencies for this module. */
-  // packageName: undefined,  /* The "name" in package.json. */
-  // release: undefined,      /* Add release management to this project. */
+  deps: ['projen'],
+  peerDeps: ['projen'],
+  // description:
+  devDeps: [
+    'fs-extra',
+    '@types/fs-extra@^8',
+  ],
+  packageName: '@desiby/projen-github-demo',
+  dependabot: false, // Disabling because it is a demo project
+  mergify: false, // Disabling because it is a demo project
+
+  npmDistTag: 'latest',
+  npmRegistryUrl: 'https://npm.pkg.github.com', 
 });
 project.synth();
