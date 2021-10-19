@@ -12,12 +12,13 @@ const project = new JsiiProject({
   devDeps: [
     'fs-extra',
     '@types/fs-extra@^8',
+    'projen',
   ],
   packageName: '@desiby/projen-github-demo',
   dependabot: false, // Disabling because it is a demo project
   mergify: false, // Disabling because it is a demo project
 
   npmDistTag: 'latest',
-  npmRegistryUrl: 'https://npm.pkg.github.com', 
+  npmRegistryUrl: 'https://npm.pkg.github.com',
 });
 project.synth();
